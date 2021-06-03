@@ -17,14 +17,14 @@ try
   $mail->SMTPSecure = "tls";                 
   $mail->Host       = "smtp.gmail.com";      
   $mail->Port        = '587';             
-  $mail->AddAddress("empulseop@gmail.com");
+  $mail->AddAddress("your email address");
   $mail->Username   =$row['email'];  
   $mail->Password   =$row['password'];            
   $mail->SetFrom($row['email'],$_SESSION['USER_NAME']);
   $mail->AddReplyTo($row['email'],$_SESSION['USER_NAME']);
   $mail->Subject    = "Leave Request";
-  $mail->Body    = "Hey Aditya, <br>This is to inform you that I have applied for a leave.<br>Please do check and update the leave status.<br>Thanks for considering my request.<br><br>Regards,<br> ".$_SESSION['USER_NAME'];
-  $mail->AltBody    = "Hey Aditya, <br>This is to inform you that I have applied for a leave.<br>Please do do check and update the leave status.<br>Thanks for considering my request.<br><br>Regards,<br> ".$_SESSION['USER_NAME'];
+  $mail->Body    = "Hey, <br>This is to inform you that I have applied for a leave.<br>Please do check and update the leave status.<br>Thanks for considering my request.<br><br>Regards,<br> ".$_SESSION['USER_NAME'];
+  $mail->AltBody    = "Hey, <br>This is to inform you that I have applied for a leave.<br>Please do do check and update the leave status.<br>Thanks for considering my request.<br><br>Regards,<br> ".$_SESSION['USER_NAME'];
   if($mail->Send())
   {
    
