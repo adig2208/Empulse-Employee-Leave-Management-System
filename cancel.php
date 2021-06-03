@@ -17,7 +17,7 @@ try
   $mail->SMTPSecure = "tls";                 
   $mail->Host       = "smtp.gmail.com";      
   $mail->Port        = '587';             
-  $mail->AddAddress("your email id");
+  $mail->AddAddress("receiver's email id");
   $mail->Username   =$row['email'];  
   $mail->Password   =$row['password'];            
   $mail->SetFrom($row['email'],$_SESSION['USER_NAME']);
