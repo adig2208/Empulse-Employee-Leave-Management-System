@@ -18,10 +18,10 @@ try
   $mail->Host       = "smtp.gmail.com";      
   $mail->Port        = '587';             
   $mail->AddAddress($row['email']);
-  $mail->Username   ="empulseop@gmail.com";  
-  $mail->Password   ="Empulse00";            
-  $mail->SetFrom('empulseop@gmail.com','Empulse');
-  $mail->AddReplyTo("empulseop@gmail.com","Empulse");
+  $mail->Username   ="your email id";  
+  $mail->Password   ="*********";            
+  $mail->SetFrom('your email id','Empulse');
+  $mail->AddReplyTo("your email id","Empulse");
   $mail->Subject    = "Leave Status Update";
   $mail->Body    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
   $mail->AltBody    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
