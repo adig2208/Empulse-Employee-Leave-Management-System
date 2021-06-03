@@ -20,8 +20,8 @@ try
   $mail->AddAddress($row['email']);
   $mail->Username   ="your email id";  
   $mail->Password   ="*********";            
-  $mail->SetFrom('your email id','Empulse');
-  $mail->AddReplyTo("your email id","Empulse");
+  $mail->SetFrom('your email id','name');
+  $mail->AddReplyTo("your email id","name");
   $mail->Subject    = "Leave Status Update";
   $mail->Body    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
   $mail->AltBody    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
