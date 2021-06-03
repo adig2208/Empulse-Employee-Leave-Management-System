@@ -1,4 +1,4 @@
 <?php
 session_start();
-$con=mysqli_connect('localhost','root','','leave_manage_system');
+$con=mysqli_connect('localhost','root','','your_db_name');
 ?>
