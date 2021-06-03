@@ -20,11 +20,11 @@ try
   $mail->AddAddress($row['email']);
   $mail->Username   ="your email id";  
   $mail->Password   ="*******";            
-  $mail->SetFrom('your email id','Empulse');
-  $mail->AddReplyTo("your email id","Empulse");
+  $mail->SetFrom('your email id','name');
+  $mail->AddReplyTo("your email id","name");
   $mail->Subject    = "Leave Status Update";
-  $mail->Body    = "Sorry, the Leave you applied for has been rejected.<br>Please contact the HR office in case of further queries.<br><br>Regards,<br>Empulse";
-  $mail->AltBody    = "Sorry, the Leave you applied for has been rejected.<br>Please contact the HR office in case of further queries.<br><br>Regards,<br>Empulse";
+  $mail->Body    = "Sorry, the Leave you applied for has been rejected.<br>Please contact the HR office in case of further queries.<br><br>Regards,<br>";
+  $mail->AltBody    = "Sorry, the Leave you applied for has been rejected.<br>Please contact the HR office in case of further queries.<br><br>Regards,<br>";
 
   if($mail->Send())
   {
