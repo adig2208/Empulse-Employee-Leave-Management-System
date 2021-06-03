@@ -68,14 +68,14 @@ CREATE TABLE `employee` (
 
 INSERT INTO `employee` (`id`, `name`, `gender`, `email`, `mobile`, `password`, `department_id`, `address`, `birthday`, `role`) VALUES
 (1, 'Aditya Gurnani', 'male', 'aditya@gmail.com', '9167189321', '12345', 2, 'Mumbai', '2000-08-22', 1),
-(2, 'Krish Amesur', 'male', 'krish.amesur@gmail.com', '8976541124', '12345', 1, 'Mumbai', '2000-11-14', 2),
+(2, 'Krish Amesur', 'male', 'krish@gmail.com', '8976541124', '12345', 1, 'Mumbai', '2000-11-14', 2),
 (4, 'Ashwin Sharma', 'male', 'as@gmail.com', '9876532140', '12345', 1, 'Mumbai', '2000-08-01', 2),
 (5, 'Ravi Khurana', 'male', 'ravi@gmail.com', '9087612345', '12345', 2, 'Mumbai', '1996-10-24', 2),
 (6, 'Abhishek Pant', 'male', 'pant@gmail.com', '9167198250', '12345', 2, 'Mumbai', '2000-08-23', 2),
 (8, 'Rohan Sharma', 'male', 'rohan@gmail.com', '9321456712', '12345', 7, 'Mumbai', '1995-02-23', 2),
 (9, 'Rishi Ahuja', 'male', 'r@gmail.com', '9876541230', '12345', 3, 'Mumbai', '1990-06-21', 2),
 (10, 'Shefali Narayan', 'female', 's@gmail.com', '9879876564', '12345', 1, 'Mumbai', '1997-10-22', 2),
-(11, 'Zoya Ahluwalia', 'female', 'travelbot.eva@gmail.com', '9876544561', '12345', 2, 'Mumbai', '1995-01-12', 2),
+(11, 'Zoya Ahluwalia', 'female', 'eva@gmail.com', '9876544561', '12345', 2, 'Mumbai', '1995-01-12', 2),
 (12, 'Akshay Pillai', 'male', 'pillu@gmail.com', '9678123458', '12345', 7, 'Mumbai', '1993-06-21', 2),
 (13, 'Dhruv Sharma', 'male', 'ds@gmail.com', '8974231789', '12345', 4, 'Mumbai', '2000-05-25', 2),
 (14, 'Kartik Bedi', 'male', 'kartik@gmail.com', '9807907612', '12345', 3, 'Mumbai', '1997-07-24', 2),
@@ -203,75 +203,3 @@ INSERT INTO `project` (`id`, `client_name`, `project_name`, `project_status`, `p
 (32, 'Tata', 'Strategy Planning', 'ongoing', '2020-10-17'),
 (33, 'Vedanta', 'Website Development', 'completed', '2020-10-25');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `department`
---
-ALTER TABLE `department`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `employee`
---
-ALTER TABLE `employee`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `leave`
---
-ALTER TABLE `leave`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `leave_type`
---
-ALTER TABLE `leave_type`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `project`
---
-ALTER TABLE `project`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `department`
---
-ALTER TABLE `department`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT for table `employee`
---
-ALTER TABLE `employee`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
-
---
--- AUTO_INCREMENT for table `leave`
---
-ALTER TABLE `leave`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
-
---
--- AUTO_INCREMENT for table `leave_type`
---
-ALTER TABLE `leave_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `project`
---
-ALTER TABLE `project`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
