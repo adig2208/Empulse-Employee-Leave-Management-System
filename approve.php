@@ -23,8 +23,8 @@ try
   $mail->SetFrom('your email id','name');
   $mail->AddReplyTo("your email id","name");
   $mail->Subject    = "Leave Status Update";
-  $mail->Body    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
-  $mail->AltBody    = "The Leave you applied for has been approved.<br><br>Regards,<br> Empulse";
+  $mail->Body    = "The Leave you applied for has been approved.<br><br>Regards,<br> ";
+  $mail->AltBody    = "The Leave you applied for has been approved.<br><br>Regards,<br> ";
 
   if($mail->Send())
   {
